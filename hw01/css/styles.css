@@ -1,0 +1,93 @@
+/* Global styles
+------------------------------------*/
+/*
+/* HEX
+https://coolors.co/0a2239-cb8589-ded6dc
+$color1: #0A2239; oxford blue
+$color4: #CB8589; old rose
+$color5: #DED6DC; gainsboro
+*/
+html {
+    box-sizing: border-box;
+    /* background: #EEE; */
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.container {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.05fr 0.5fr 0.2fr 0.2fr;
+   grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d";
+   min-height: 100vh;
+}
+.toptab {
+  grid-area: a;
+  background-color: #cb8589ff;
+  padding-top: 20px;
+  text-align: right;
+  padding-right: 30px;
+  font-family: 'Cuprum', sans-serif;
+}
+.toppart {
+  grid-area: b;
+  background-color: #cb8589ff;
+}
+.midone {
+  grid-area: c;
+  background-color: #BCB3B9;
+  padding-left: 50px;
+  border-top: 3px solid #0A2239;
+}
+.midtwo {
+  grid-area: d;
+  background-color: #BCB3B9;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #0A2239;
+  font-size: 20px;
+}
+h1 {
+  font-size: 150px;
+  text-align: center;
+  padding-top: 180px;
+}
+h2 {
+  font-size: 60px;
+  text-align: left;
+  padding-left: 215px;
+  padding-top: 0;
+  padding-bottom: 160px;
+}
+
+h1,h2 {
+  font-family: 'Cuprum', sans-serif;
+  color: white;
+  margin: 0;
+}
+h3 {
+  font-family: 'Cuprum', sans-serif;
+  color: white;
+  font-size: 50px;
+}
+footer {
+  font-size: 15px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 50px;
+  font-size: 30px;
+}
+a:hover {
+  color: #0A2239;
+}
