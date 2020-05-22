@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Shopper</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- https://css-tricks.com/snippets/css/complete-guide-grid/ -->
+<div class="container">
+   <!-- top search bar -->
+   <section class="menu1">
+     <h1> Stores </h1>
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search..." title="mySearch">
+   </section>
+
+   <!-- main content -->
+   <main class="main">
+      <div>
+        <img src="marianos-fresh-market.png">
+        Mariano's
+      </div>
+      <div>
+        <img src="costco.png">
+        Costco
+      </div>
+      <div>
+        <img src="whole-foods.jpg">
+        Whole Foods
+      </div>
+      <div>
+        <img src="Jewel-Osco-logo.png">
+        Jewel Osco
+      </div>
+      <div>
+        <img src="Safeway.png">
+        Safeway
+      </div>
+      <div>
+        More stores go here
+      </div>
+   </main>
+
+   <!-- tabs -->
+   <footer class="tabs">
+     <a href="#Stores" id="StoresB">Stores</a>
+     <a href="#Products" id="ProductsB">Products</a>
+     <a href="#MyList" id="MyListB">My List</a>
+     <a href="#Settings" id="SettingsB">Settings</a>
+   </footer>
+</div>
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

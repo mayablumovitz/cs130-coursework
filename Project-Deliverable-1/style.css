@@ -1,0 +1,123 @@
+body * {
+   width: 100%;
+   box-sizing: border-box;
+   font-family: 'Noto Sans JP', sans-serif;
+}
+body {
+   margin: 0;
+   padding: 10px;
+   min-width: 1500px;
+}
+.container {
+   color: white;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 0.1fr 1fr 0.2fr;
+   grid-template-areas:
+      "a"
+      "b"
+      "c";
+   min-height: 100vh;
+   grid-row-gap: 20px;
+   grid-column-gap: 20px;
+}
+h1, article, aside, section, main, footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+h1 {
+  padding-top: 10px;
+}
+section {
+  grid-area: a;
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  text-align: left;
+  align-items: left;
+  border-radius: 20px;
+}
+div {
+  display: flex;
+  flex-wrap: nowrap;
+}
+img {
+  height: 35px;
+  width: 45px;
+  padding-right: 10px;
+}
+main {
+   grid-area: b;
+   display: flex;
+   flex-wrap: wrap;
+   background: white;
+   border: solid 2px #000;
+   color: black;
+   font-size: 20px;
+   padding: 10px;
+}
+footer {
+   grid-area: c;
+   background: white;
+   color: blue;
+   border: solid 2px #000;
+   padding: 10px;
+}
+
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+.tabs {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+.tabs a {
+  float: left;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  width: 25%;
+  text-align: center;
+}
+.tabs a:hover {
+  color: pink;
+}
+
+/* @media (max-width: 900px) {
+    .container {
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1.5fr 2fr 5fr 5fr 5fr;
+       grid-template-areas:
+          "a b"
+          "f f"
+          "c d"
+          "e e"
+          "g g";
+    }
+}
+
+
+@media (max-width: 600px) {
+   .container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+         "a ."
+         "b b"
+         "c c"
+         "d d"
+         "e e"
+         "g g";
+   }
+   .menu1, .menu2 { min-height: 40px; }
+   article, main { min-height: 30vh; }
+   aside { display: none; }
+}
+*/
