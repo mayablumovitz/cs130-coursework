@@ -122,9 +122,9 @@ const getProduct = (term) => {
     {
       if (product.name.toUpperCase().includes(term.toUpperCase())) {
         const template = `<div class="prod">
+        <input class="add" onclick="addToList(${product.id})" type="button" value="+">
           <img src="${product.imgsrc}">
           ${product.name}
-          <div class="add" onclick="addToList(${product.id})"><input type="button" value="+"></div>
         </div>`;
         document.querySelector("main").innerHTML += template;
         check = true;
@@ -274,9 +274,9 @@ const delFromList = (itemID) => {
     for(product of retrievedObject)
     {
         const template = `<div class="prod">
+        <input class="del" onclick="delFromList(${product.id})" type="button" value="-">
           <img src="${product.imgsrc}">
           ${product.name}
-          <div class="del" onclick="delFromList(${product.id})"><input type="button" value="-"></div>
         </div>`;
         document.querySelector("main").innerHTML += template;
     }
